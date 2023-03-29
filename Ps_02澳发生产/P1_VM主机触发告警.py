@@ -145,7 +145,7 @@ def get_datas():
     print(len(os_host))
     # print(zbx.event_get(10280))
     #
-    event_filters=["CPU Utilization"] #Disk space usage
+    event_filters=["CPU Utilization"] #Disk space usage ：CPU Utilization  ： Free swap : Available memory
 
     datas = []
     for i, host in enumerate(os_host, start=1):
@@ -187,4 +187,4 @@ def get_datas():
 
 if __name__ == '__main__':
     datas = get_datas()
-    write_excel("zabbix_CPU_event.xlsx", datas)
+    write_excel("表格/zabbix_CPU_event.xlsx", datas)

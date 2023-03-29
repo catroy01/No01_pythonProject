@@ -20,7 +20,7 @@ for host in hosts:
         hostids=host_id,
         output=["lastvalue"],
         # 设置时间范围为2月
-        time_range={"from": "2022-03-01 00:00:00", "to": "2022-03-30 23:59:59"}
+        time_range={"from": "2023-02-01 00:00:00", "to": "02-28 23:59:59"}
     )
     if memory_usage and memory_usage[0]['lastvalue'] != 'N/A':
         memory_usage = memory_usage[0]['lastvalue'] + '%'
